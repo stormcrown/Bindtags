@@ -1,0 +1,182 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android-extensions'
+android {
+    signingConfigs {
+
+    }
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.blozi.bindtags"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1673
+        versionName "2.2.8"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+//            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //          applicationIdSuffix ".release"
+//            versionNameSuffix "-release"
+        }
+        debug {
+            minifyEnabled true
+//            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            applicationIdSuffix ".debug"
+//            versionNameSuffix "-debug"
+        }
+        /**
+         * The 'initWith' property allows you to copy configurations from other build types,
+         * so you don't have to configure one from the beginning. You can then configure
+         * just the settings you want to change. The following line initializes
+         * 'jnidebug' using the debug build type, and changes only the
+         * applicationIdSuffix and versionNameSuffix settings.
+         */
+
+        jnidebug {
+
+            // This copies the debuggable attribute and debug signing configurations.
+            initWith debug
+
+            applicationIdSuffix ".jnidebug"
+//            versionNameSuffix "-jnidebug"
+            jniDebuggable true
+        }
+    }
+    // Specifies the flavor dimensions you want to use. The order in which you
+    // list each dimension determines its priority, from highest to lowest,
+    // when Gradle merges variant sources and configurations. You must assign
+    // each product flavor you configure to one of the flavor dimensions.
+    flavorDimensions "mode" //"api",
+
+    productFlavors {
+        full {
+            dimension "mode"
+            //     applicationIdSuffix ".full"
+//            versionNameSuffix "-full"
+        }
+// Configurations in the "api" product flavors override those in "mode"
+        // flavors and the defaultConfig {} block. Gradle determines the priority
+        // between flavor dimensions based on the order in which they appear next
+        // to the flavorDimensions property above--the first dimension has a higher
+        // priority than the second, and so on.
+//        minApi19 {
+//            dimension "api"
+//            minSdkVersion '19'
+//            // To ensure the target device receives the version of the app with
+//            // the highest compatible API level, assign version codes in increasing
+//            // value with API level. To learn more about assigning version codes to
+//            // support app updates and uploading to Google Play, read Multiple APK Support
+//            // versionCode 190000 + android.defaultConfig.versionCode
+//            applicationIdSuffix ".minApi19"
+////            versionNameSuffix "-minApi19"
+//        }
+//        minApi21 {
+//            dimension "api"
+//            minSdkVersion '21'
+//            // To ensure the target device receives the version of the app with
+//            // the highest compatible API level, assign version codes in increasing
+//            // value with API level. To learn more about assigning version codes to
+//            // support app updates and uploading to Google Play, read Multiple APK Support
+//            // versionCode 190000 + android.defaultConfig.versionCode
+//            applicationIdSuffix ".minApi21"
+////            versionNameSuffix "-minApi19"
+//        }
+//        minApi24 {
+//            dimension "api"
+//            minSdkVersion '24'
+//            // To ensure the target device receives the version of the app with
+//            // the highest compatible API level, assign version codes in increasing
+//            // value with API level. To learn more about assigning version codes to
+//            // support app updates and uploading to Google Play, read Multiple APK Support
+//            // versionCode 190000 + android.defaultConfig.versionCode
+//            applicationIdSuffix ".minApi24"
+////            versionNameSuffix "-minApi19"
+//        }
+    }
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "BindTags-${variant.versionName}.${variant.versionCode}-${variant.buildType.name}-${releaseTime()}.apk"
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+    }
+    buildToolsVersion '28.0.1'
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+}
+
+def releaseTime() {
+    return new Date().format("yyyyMMdd hhmmss", TimeZone.getTimeZone("GMT+:08:00"))
+}
+
+ext {
+    supportLibVersion = '28.+'  // variable that can be referenced to keep support libs consistent
+}
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.2'
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+    jnidebugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation "com.android.support:appcompat-v7:${supportLibVersion}"
+    implementation "com.android.support:design:${supportLibVersion}"
+    implementation "com.android.support:recyclerview-v7:${supportLibVersion}"
+    implementation "com.android.support:percent:${supportLibVersion}"
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    testImplementation 'junit:junit:4.12'
+    implementation files('libs/HTTPClient-4.0.jar')
+    implementation files('libs/HTTPCore-4.0.1.jar')
+    implementation files('libs/dom4j-1.6.1.jar')
+    implementation files('libs/zxing/zxing.jar')
+    implementation files('libs/ScanerLibraryV1.5.jar')
+    implementation files('libs/ScanDecode.jar')
+    //implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.12'
+    //gif功能
+    // 图片功能整合
+    implementation 'com.github.bumptech.glide:glide:4.7.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
+    kapt 'com.github.bumptech.glide:compiler:4.7.1'
+    //    implementation('com.github.bumptech.glide:glide:4.6.1@aar') {
+    //        transitive = true
+    //    }   // 图片功能整合
+    implementation 'com.ashokvarma.android:bottom-navigation-bar:2.0.4'// 底部菜单
+
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    // https://mvnrepository.com/artifact/commons-codec/commons-codec
+    implementation 'commons-codec:commons-codec:1.11'
+    // 加密
+
+    //    implementation 'com.github.hackware1993:MagicIndicator:1.5.0' // 指示器
+//    implementation 'com.gyf.barlibrary:barlibrary:2.3.0' // 沉浸式状态栏
+}
+repositories {
+    mavenCentral()
+}
