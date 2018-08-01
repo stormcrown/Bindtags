@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.blozi.bindtags"
+    android:versionCode="1673"
+    android:versionName="2.2.8">
+
+    <!-- 获得音频口I/O权限 -->
+    <!-- <uses-permission android:name="android.permission.RECORD_AUDIO" /> -->
+    <!-- <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" /> -->
+    <!-- <uses-permission android:name="android.permission.INTERNET" /> -->
+
+
+    <!-- 获取地理位置权限 -->
+
+
+    <!-- 这个权限用于进行网络定位 -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> -->
+
+
+    <!-- 这个权限用于访问GPS定位 -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> -->
+
+
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> -->
+
+
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <!-- <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> -->
+
+
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <!--  安装APP权限 -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <!-- <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" /> -->
+
+
+    <!-- 允许应用读取低级别的系统日志文件 -->
+    <!-- <uses-permission android:name="android.permission.READ_LOGS" /> -->
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <!-- 允许应用读取NFC -->
+    <uses-permission android:name="android.permission.NFC" />
+
+    <!-- 自动创建桌面快捷方式的权限 -->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 摄像头权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 其他分享需要用到的权限 -->
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <!-- 系统账户权限 -->
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <application
+        android:name=".application.Global"
+        android:allowBackup="false"
+        android:icon="@mipmap/app_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <provider
+
+            android:name="android.support.v4.content.FileProvider"
+
+            android:authorities="com.blozi.bindtags.fileProvider"
+
+            android:grantUriPermissions="true"
+
+            android:exported="false">
+
+            <meta-data
+
+                android:name="android.support.FILE_PROVIDER_PATHS"
+
+                android:resource="@xml/file_paths"/>
+
+        </provider>
+        <receiver android:name=".reciver.BLOZIScanReciver">
+            <intent-filter>
+
+                <!-- apls KT40Q -->
+                <action android:name="com.se4500.onDecodeComplete" />
+                <!-- DataTerminal Data Terminal -->
+                <action android:name="com.android.server.scannerservice.broadcast" />
+                <!-- Kaicom 570 -->
+                <action android:name="com.android.receive_scan_action" />
+                <!-- apls android -->
+                <action android:name="android.intent.action.SCANRESULT" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".reciver.DownloadCompletedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+                <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED" />
+            </intent-filter>
+        </receiver>
+        <!-- <service android:name=".service.BloziAccountService" android:exported="true"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.accounts.AccountAuthenticator" /> -->
+        <!-- </intent-filter> -->
+        <!-- <meta-data -->
+        <!-- android:name="android.accounts.AccountAuthenticator" -->
+        <!-- android:resource="@xml/account" /> -->
+        <!-- </service> -->
+        <!-- <service android:name=".service.NetDesktopService" android:exported="false"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.blozi.blindtags.service.NetDesktopService"/> -->
+        <!-- </intent-filter> -->
+        <!-- </service> -->
+        <activity
+            android:name=".activities.ShowTipsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.RackDetailActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ConfigureUrlActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.MainActivityLocal"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.GoodsInfoActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.RackDetailMapActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.zxing.CaptureActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ScanBarcodeOfflineActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.zxing_new.activity.CaptureActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!-- <activity android:name=".activities.SelectWifiActivity"  /> -->
+        <!-- <activity android:name=".activities.ShowBindGoodsActivity" /> -->
+        <!-- <activity android:name=".activities.ShowBindGoodsListActivity" /> -->
+        <!-- <activity android:name=".activities.UserInfoActivity" /> -->
+        <!-- <activity android:name=".activities.SendDateToApActivity" /> -->
+        <!-- <activity android:name=".activities.ImportTagsActivity" /> -->
+        <!-- <activity android:name=".activities.SelectGoActivity" /> -->
+        <!-- <activity android:name=".activities.updateTagsActivity" /> -->
+        <!-- <activity android:name=".activities.getUserInfoActivity"  /> -->
+
+
+    </application>
+
+</manifest>
