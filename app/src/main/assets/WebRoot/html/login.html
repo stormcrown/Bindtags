@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="zh_cn">
+<head>
+    <script>
+        var data = new Date()
+    </script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!--<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="../plugins/bootstrap/4.0.0/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="../plugins/supersized/supersized.css" />
+     <style type="text/css">
+       
+    </style>
+    <title>Hello, world!</title>
+</head>
+<body  >
+<div class="container" style="color: #14b8f4;border: 2px">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <form role="form">
+                <div class="form-group" >
+                    <label for="loginId">Login Id</label>
+                    <input id="loginId" type="text" class="form-control" style="color: #14b8f4;" />
+                </div>
+                <div class="form-group"  >
+                    <label for="password">password</label>
+                    <input id="password" type="password" class="form-control" style="color: #14b8f4;"  />
+                </div>
+                <div class="form-group" >
+                    <button type="button" class="btn btn-lg btn-block btn-primary" >login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--<div class="row clearfix">-->
+        <!--<div class="col-md-4 column">-->
+            <!--<button type="reset" class="btn btn-lg btn-block btn-primary">Reset</button>-->
+        <!--</div>-->
+        <!--<div class="col-md-4 column">-->
+            <!--<button type="button" class="btn btn-lg btn-block btn-primary">Submit</button>-->
+        <!--</div>-->
+        <!--<div class="col-md-4 column">-->
+            <!--<button type="button" class="btn btn-block active btn-default btn-primary">按钮</button>-->
+        <!--</div>-->
+    <!--</div>-->
+</div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!--<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+<!--<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>-->
+<!--<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>-->
+<!--<script src="../plugins/jquery/3.2.1/jquery.slim.min.js" ></script>-->
+<script src="../plugins/jquery/3.2.1/jquery.slim.min.js" ></script>
+<script src="../plugins/popper/1.12.9/popper.min.js" ></script>
+<script src="../plugins/bootstrap/4.0.0/js/bootstrap.min.js" ></script>
+
+<script src="../plugins/jquery/jquery.min.js" ></script>
+<script src="../plugins/supersized/jquery.easing.min.js" ></script>
+<script src="../plugins/supersized/supersized.3.2.7.min.js" ></script>
+<script>
+   jQuery(function($){
+
+    $.supersized({
+
+        // Functionality
+        slide_interval     : 4000,    // Length between transitions
+        transition         : 1,    // 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+        transition_speed   : 1000,    // Speed of transition
+        performance        : 1,    // 0-Normal, 1-Hybrid speed/quality, 2-Optimizes image quality, 3-Optimizes transition speed // (Only works for Firefox/IE, not Webkit)
+
+        // Size & Position
+        min_width          : 0,    // Min width allowed (in pixels)
+        min_height         : 0,    // Min height allowed (in pixels)
+        vertical_center    : 1,    // Vertically center background
+        horizontal_center  : 1,    // Horizontally center background
+        fit_always         : 0,    // Image will never exceed browser width or height (Ignores min. dimensions)
+        fit_portrait       : 1,    // Portrait images will not exceed browser height
+        fit_landscape      : 0,    // Landscape images will not exceed browser width
+
+        // Components
+        slide_links        : 'blank',    // Individual links for each slide (Options: false, 'num', 'name', 'blank')
+        slides             : [    // Slideshow Images
+                                 // {image : 'file:///android_asset/WebRoot/images/6.jpg'},
+                                 // {image : 'file:///android_asset/WebRoot/images/7.jpg'},
+                                 // {image : 'file:///android_asset/WebRoot/images/8.jpg'}
+                                 {image : '../images/6.jpg'},
+                                 {image : '../images/7.jpg'},
+                                 {image : '../images/8.jpg'}
+                             ]
+
+    });
+
+});
+/*
+jQuery(function($){			
+				$.supersized({
+				//	 Functionality
+					slideshow               :   0,			// Slideshow on/off
+					autoplay				:	0,			// Slideshow starts playing automatically
+					start_slide             :   0,			// Start slide (0 is random)
+					stop_loop				:	0,			// Pauses slideshow on last slide
+					random					: 	1,			// Randomize slide order (Ignores start slide)
+					slide_interval          :   300,		// Length between transitions
+					transition              :   1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+					transition_speed		:	100,		// Speed of transition
+					new_window				:	1,			// Image links open in new window/tab
+					pause_hover             :   0,			// Pause slideshow on hover
+					keyboard_nav            :   1,			// Keyboard navigation on/off
+					performance				:	1,			// 0-Normal, 1-Hybrid speed/quality, 2-Optimizes image quality, 3-Optimizes transition speed // (Only works for Firefox/IE, not Webkit)
+					image_protect			:	1,			// Disables image dragging and right click with Javascript
+													   
+					// Size & Position						   
+					min_width		        :   0,			// Min width allowed (in pixels)
+					min_height		        :   0,			// Min height allowed (in pixels)
+					vertical_center         :   1,			// Vertically center background
+					horizontal_center       :   1,			// Horizontally center background
+					fit_always				:	1,			// Image will never exceed browser width or height (Ignores min. dimensions)
+					fit_portrait         	:   1,			// Portrait images will not exceed browser height
+					fit_landscape			:   1,			// Landscape images will not exceed browser width
+															   
+					// Components							
+					slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+					thumb_links				:	1,			// Individual thumb links for each slide
+					thumbnail_navigation    :   0,			// Thumbnail navigation
+					slides 					:  	[			// Slideshow Images
+					 {image : '../images/6.jpg'},
+                                 {image : '../images/7.jpg'},
+                                 {image : '../images/8.jpg'},
+								 {image : '../images/9.jpg'},
+								 {image : '../images/11.jpg'},
+                                 {image : '../images/1.jpg'},
+                                 {image : '../images/2.jpg'},
+                                 {image : '../images/3.jpg'}
+													//	{image : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/kazvan-1.jpg', title : 'Image Credit: Maria Kazvan', thumb : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/kazvan-1.jpg', url : 'http://www.nonsensesociety.com/2011/04/maria-kazvan/'},
+													//	{image : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/kazvan-2.jpg', title : 'Image Credit: Maria Kazvan', thumb : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/kazvan-2.jpg', url : 'http://www.nonsensesociety.com/2011/04/maria-kazvan/'},  
+													//	{image : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/kazvan-3.jpg', title : 'Image Credit: Maria Kazvan', thumb : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/kazvan-3.jpg', url : 'http://www.nonsensesociety.com/2011/04/maria-kazvan/'},
+													//	{image : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/wojno-1.jpg', title : 'Image Credit: Colin Wojno', thumb : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/wojno-1.jpg', url : 'http://www.nonsensesociety.com/2011/03/colin/'},
+													//	{image : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/wojno-2.jpg', title : 'Image Credit: Colin Wojno', thumb : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/wojno-2.jpg', url : 'http://www.nonsensesociety.com/2011/03/colin/'},
+													//	{image : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/wojno-3.jpg', title : 'Image Credit: Colin Wojno', thumb : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/wojno-3.jpg', url : 'http://www.nonsensesociety.com/2011/03/colin/'},
+													//	{image : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/shaden-1.jpg', title : 'Image Credit: Brooke Shaden', thumb : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/shaden-1.jpg', url : 'http://www.nonsensesociety.com/2011/06/brooke-shaden/'},
+													//	{image : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/shaden-2.jpg', title : 'Image Credit: Brooke Shaden', thumb : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/shaden-2.jpg', url : 'http://www.nonsensesociety.com/2011/06/brooke-shaden/'},
+													//	{image : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/shaden-3.jpg', title : 'Image Credit: Brooke Shaden', thumb : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/shaden-3.jpg', url : 'http://www.nonsensesociety.com/2011/06/brooke-shaden/'}
+												],
+												
+					// Theme Options			   
+					progress_bar			:	0,			// Timer for each slide							
+					mouse_scrub				:	0
+					
+				});
+		    });*/
+    $(document).ready(function(){
+        $('#GoodsName').val(new Date().getTime() -data.getTime());
+    });
+    function editable(editable){
+
+    }
+</script>
+</body>
+</html>
