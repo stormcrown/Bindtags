@@ -24,11 +24,10 @@ class ToPushTagsTask:BaseTask {
         val tagIds = params[2]
         val storeInfoId = params[3]
         val map = HashMap<Any, Any>()
-        map["action"] = "ToPushTagsByAPP"
+
         map["loginId"] = loginId
         map["loginPassword"] = StringFilter.getMD5(password)
-        map["storeInfoId"] = storeInfoId
-        map["tagIds"] = tagIds
+
 
         val d = XmlUtil.mapToXml(map, "request");
         Log.i("上传价签",d.asXML());

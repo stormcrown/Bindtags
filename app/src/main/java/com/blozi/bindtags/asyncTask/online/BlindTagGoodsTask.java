@@ -58,12 +58,11 @@ public class BlindTagGoodsTask extends BaseTask {
         String storInfoId =params[5];
 
         Map map = new HashMap();
-        map.put("action","blindTagGoods");
+
         map.put("loginId",loginId);
         map.put("loginPassword",StringFilter.getMD5(password));
         map.put("goodsInfoId",goodsInfoId);
-        map.put("tagInfoId",tagInfoId);
-        map.put("tagCode",tagCode);
+
         map.put("storeInfoId",storInfoId);
 //        Log.i("绑定请求" , XmlUtil.mapToXml(map,"request").asXML());
         return super.doInBackground(XmlUtil.mapToXml(map,"request").asXML());

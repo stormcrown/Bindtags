@@ -73,11 +73,11 @@ public class ShowGoodsInfoTask extends BaseTask {
         String ifDetail = "";
         if (params.length > 4) ifDetail = params[4];
         Map map = new HashMap<>();
-        map.put("action", "ShowGoodsInfoOnApp");
+
         map.put("loginId", loginId);
         map.put("loginPassword", StringFilter.getMD5(password));
         map.put("storeInfoId", storeInfoId);
-        map.put("goodsBarcode", goodsBarcode);
+
         map.put("ifDetail", ifDetail);
         Document document = XmlUtil.mapToXml(map, "request");
         Log.i("测试", document.asXML());

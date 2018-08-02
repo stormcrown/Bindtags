@@ -62,12 +62,10 @@ public class UpdateTagsTask extends BaseTask {
         String tagsId = params[2];
         String  storeInfoId= params[3];
         Map map =new HashMap<>();
-        if(isDelete)map.put("action","toBeDeleteTagsOnApp");
-        else if(!isDelete) map.put("action","updateTags");
+
         map.put("loginId",loginId);
         map.put("loginPassword", StringFilter.getMD5(password));
-        map.put("storeInfoId", storeInfoId);
-        map.put("tagsId", tagsId);
+
 //        Log.i("上传价签",map.toString());
         return super.doInBackground(XmlUtil.mapToXml(map,"request").asXML());
     }

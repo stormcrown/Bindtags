@@ -41,11 +41,10 @@ class DeleteRackInfoTask(currentActivity: Activity, webserviceUrl: String) : Bas
 
     override fun doInBackground(vararg params: String): String {
         val map = HashMap<Any, Any?>()
-        map["action"] = "effectToggle"
+
         map["loginId"] = bloziPreferenceManager.loginid
         map["loginPassword"] = StringFilter.getMD5(bloziPreferenceManager.password)
-        map["storeInfoId"] = params[0]
-        map["idArr"] = params[1]
+
         return super.doInBackground(XmlUtil.mapToXml(map, "request").asXML())
     }
 

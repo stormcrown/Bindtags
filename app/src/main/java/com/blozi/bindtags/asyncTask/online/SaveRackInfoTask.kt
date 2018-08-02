@@ -41,10 +41,10 @@ class SaveRackInfoTask(currentActivity: Activity, webserviceUrl: String) : BaseT
 
     override fun doInBackground(vararg params: String): String {
         val map = HashMap<Any, Any?>()
-        map["action"] = "editRackInfo"
+
         map["loginId"] = bloziPreferenceManager.loginid
         map["loginPassword"] = StringFilter.getMD5(bloziPreferenceManager.password)
-        map["storeInfoId"] = params[0]
+
 //        map["rackInfo"] =
         val rack = JSONObject( params[1])
         val keys = rack.keys()

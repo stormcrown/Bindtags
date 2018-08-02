@@ -71,7 +71,7 @@ public class LoginTask extends BaseTask {
         }
         this.theUserPasswordWithOutMD5 = password;
         Map map=new HashMap();
-        map.put("action","loginOnApp");
+
         map.put("loginId",loginId);
         map.put("loginPassword",StringFilter.getMD5(password)  );
 //        map.put("goodsBarcode","");

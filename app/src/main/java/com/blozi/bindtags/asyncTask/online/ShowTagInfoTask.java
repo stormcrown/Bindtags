@@ -59,11 +59,10 @@ public class ShowTagInfoTask extends BaseTask {
         String  storeInfoId= params[3];
         this.theUserPasswordWithOutMD5 = password;
         Map map =new HashMap<>();
-        map.put("action","ShowTagInfoTask");
+
         map.put("loginId",loginId);
         map.put("loginPassword", StringFilter.getMD5(password));
-        map.put("storeInfoId", storeInfoId);
-        map.put("tagsBarcode", tagsBarcode);
+
         return super.doInBackground(XmlUtil.mapToXml(map,"request").asXML());
     }
 

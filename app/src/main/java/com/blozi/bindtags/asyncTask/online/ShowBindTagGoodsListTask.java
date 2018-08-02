@@ -61,12 +61,12 @@ public class ShowBindTagGoodsListTask extends BaseTask {
         String firstRow = params[5];
         this.theUserPasswordWithOutMD5 = password;
         Map map=new HashMap();
-        map.put("action","ShowBindTagGoodsList");
+
         map.put("loginId",loginId);
         map.put("loginPassword", StringFilter.getMD5(password));
         map.put("goodsBarcode",goodsBarcode);
         map.put("goodsName",goodsName);
-        map.put("isBind",isBind);
+
         map.put("firstRow",firstRow);
 
         XmlUtil.mapToXml(map,"request");

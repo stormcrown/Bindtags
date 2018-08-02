@@ -42,19 +42,16 @@ class GetRackDetailMapData(currentActivity: Activity, webserviceUrl: String) : B
 
     override fun doInBackground(vararg params: String): String {
         val map = HashMap<Any, Any?>()
-        map["action"] = "showRackDetail"
+
         map["loginId"] = bloziPreferenceManager.loginid
         map["loginPassword"] = StringFilter.getMD5(bloziPreferenceManager.password)
-        if(params.size==2){
-            map["storeInfoId"] = params[0]
-            map["rackInfoId"] = params[1]
-        }
+
         return super.doInBackground(XmlUtil.mapToXml(map, "request").asXML())
     }
 
     override fun onPostExecute(result: String) {
         try {
-            Log.i("棚格图数据",result)
+          //  Log.i("棚格图数据",result)
             val doc = DocumentHelper.parseText(result)
             val root = doc.rootElement
             val map = XmlUtil.xmlToMap(doc.asXML())

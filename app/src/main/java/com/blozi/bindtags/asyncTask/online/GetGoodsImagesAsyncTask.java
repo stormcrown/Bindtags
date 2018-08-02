@@ -45,11 +45,10 @@ public class GetGoodsImagesAsyncTask extends BaseTask {
         String loginId = bloziPreferenceManager.getLoginid();
         String password = bloziPreferenceManager.getPassword();
         String goodsImageId = params[0];
-        map.put("action","getGoodsImageOnApp");
+
         map.put("loginId",loginId);
         map.put("loginPassword", StringFilter.getMD5(password));
-        map.put("goodsImageId",goodsImageId);
-        map.put("original",Boolean.FALSE.toString());
+
         Document document = XmlUtil.mapToXml(map,"request");
         Log.i("测试",document.asXML());
         return super.doInBackground(document.asXML());

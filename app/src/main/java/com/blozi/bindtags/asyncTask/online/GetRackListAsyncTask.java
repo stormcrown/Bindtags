@@ -53,12 +53,11 @@ public class GetRackListAsyncTask extends BaseTask {
     protected String doInBackground(String... params){
         Map map =new HashMap<>();
         String storeInfoId = params[0];
-        map.put("action","GetRackListOnApp");
+
         map.put("loginId",bloziPreferenceManager.getLoginid());
         map.put("loginPassword", StringFilter.getMD5(bloziPreferenceManager.getPassword()));
         map.put("storeInfoId",storeInfoId);
-        map.put("maxRows",maxRows);
-        map.put("currentPage",currentPage);
+
         map.put("firstRow",firstRow);
         map.put("isEffect", SystemConstants.IS_EFFECT_YES);
         Document document = XmlUtil.mapToXml(map,"request");
