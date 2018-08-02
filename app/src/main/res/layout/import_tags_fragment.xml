@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:scrollbars="vertical">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical|center"
+        android:orientation="horizontal"
+        android:textColorHighlight="@color/colorPrimaryLight"
+        android:textColorHint="@color/colorPrimaryLight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/import_tags_tag_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.57"
+            android:backgroundTint="@color/colorPrimaryLight"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="@string/tag_code"
+            android:textColor="@color/colorPrimary"
+            android:textColorHighlight="@color/colorPrimaryLight"
+            android:textColorHint="@color/colorPrimaryLight"
+            android:theme="@style/editText"
+            android:inputType="" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/import_tags_to_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:background="@drawable/ripple"
+        android:paddingLeft="16dp"
+        android:paddingTop="10dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="10dp"
+        android:text="@string/reset"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/input_layout" />
+
+
+    <Button
+        android:id="@+id/import_tags_scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:background="@drawable/ripple"
+        android:paddingLeft="16dp"
+        android:paddingTop="10dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="10dp"
+        android:text="@string/scan_thing"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintEnd_toStartOf="@+id/import_tags_update_tags"
+        app:layout_constraintStart_toEndOf="@id/import_tags_to_reset"
+        app:layout_constraintTop_toBottomOf="@id/input_layout" />
+
+    <Button
+        android:id="@+id/import_tags_update_tags"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_weight="1"
+        android:background="@drawable/ripple_accent"
+        android:paddingLeft="16dp"
+        android:paddingTop="10dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="10dp"
+        android:text="@string/upload"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/input_layout" />
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/top"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="#ffffff"-->
+    <!--android:orientation="vertical"-->
+    <!--android:weightSum="1">-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:gravity="center_vertical|center"-->
+    <!--android:weightSum="4.5">-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="0.5" />-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="0.5" />-->
+    <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="left"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/import_tags_to_reset">
+        <RadioButton
+            android:id="@+id/import_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/radio"
+            android:text="@string/upload"
+            android:textColor="@color/check_text" />
+        <RadioButton
+            android:id="@+id/push"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/radio"
+            android:text="@string/PushAgain"
+            android:visibility="visible"
+            android:textColor="@color/check_text" />
+        <RadioButton
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/check_text_warn"
+            android:text="@string/delete"
+            android:textColor="@color/check_text_warn"
+            android:visibility="gone" />
+    </RadioGroup>
+
+    <Switch
+        android:id="@+id/auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/auto"
+        android:visibility="gone"
+        android:textColor="@color/colorPrimary"
+        android:buttonTint="@color/click"
+        app:layout_constraintBottom_toTopOf="@id/forse_scan_tagcode"
+        app:layout_constraintEnd_toStartOf="@id/seekBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radio_group" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:visibility="gone"
+        android:max="9"
+        android:progress="3"
+        android:min="0"
+        app:layout_constraintBottom_toTopOf="@id/forse_scan_tagcode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/auto"
+        app:layout_constraintTop_toBottomOf="@id/radio_group" />
+
+    <CheckBox
+        android:id="@+id/forse_scan_tagcode"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_marginStart="8dp"
+        android:buttonTint="@color/radio"
+        android:text="@string/AllForceDistinguishTagcode"
+        android:textColor="@color/check_text"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/auto" />
+
+    <TextView
+        android:id="@+id/import_tags_is_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text=""
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/forse_scan_tagcode" />
+    <!--<LinearLayout-->
+    <!--android:id="@+id/import_tags_middle"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content">-->
+    <!--</LinearLayout>-->
+    <TextView
+        android:id="@+id/import_tags_response_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/import_tags_is_update" />
+    <!--<LinearLayout-->
+    <!--android:id="@+id/import_tags_response"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical"-->
+    <!--android:visibility="gone">-->
+    <!--</LinearLayout>-->
+
+    <!--<android.support.design.widget.TabLayout-->
+        <!--android:id="@+id/tablayout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/transparent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@id/import_tags_response_msg"-->
+       <!--&gt;-->
+
+        <!--<android.support.design.widget.TabItem-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="准备提交">-->
+
+
+        <!--</android.support.design.widget.TabItem>-->
+
+        <!--<android.support.design.widget.TabItem-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="正在提交" />-->
+
+        <!--<android.support.design.widget.TabItem-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="已经提交" />-->
+    <!--</android.support.design.widget.TabLayout>-->
+
+    <ListView
+        android:id="@+id/import_tags_tags_list"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/import_tags_response_msg"
+
+        />
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/import_tags_swipe_layout"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="horizontal">-->
+    <!---->
+    <!--</LinearLayout>-->
+</android.support.constraint.ConstraintLayout>

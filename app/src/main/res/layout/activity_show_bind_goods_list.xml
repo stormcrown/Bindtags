@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_show_bind_goods_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.blozi.bindtags.activities.ShowBindGoodsListActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="46dp"
+        android:layout_weight="1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout2">
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="36dp"
+            android:id="@+id/homepage_btn" />
+        <TextView
+            android:id="@+id/blind_goods_list"
+            android:textSize="24dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1.00"
+            android:text="@string/list"/>
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="36dp"/>
+        <TextView
+            android:id="@+id/to_blind"
+            android:textSize="24dp"
+            android:gravity="center"
+            android:text="@string/bind_thing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="36dp"/>
+
+        <TextView
+            android:id="@+id/user_info"
+            android:textSize="24dp"
+            android:gravity="center"
+            android:text="@string/user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="36dp"/>
+
+    </LinearLayout>
+    <com.blozi.bindtags.activities.RefreshLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:layout_alignRight="@+id/linearLayout2"
+        android:layout_alignEnd="@+id/linearLayout2"
+        android:layout_above="@+id/linearLayout2"
+        android:id="@+id/swipe_layout"
+        android:layout_below="@+id/top">
+
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></ListView>
+
+    </com.blozi.bindtags.activities.RefreshLayout>
+    <LinearLayout android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button android:id="@+id/is_bind"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:text="已绑定"
+            android:layout_weight="1"/>
+
+        <Button android:id="@+id/un_bind"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:text="未绑定"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

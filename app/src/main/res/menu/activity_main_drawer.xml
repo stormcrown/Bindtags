@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <!--<group android:checkableBehavior="single">-->
+        <!--<item-->
+            <!--android:id="@+id/nav_camera"-->
+            <!--android:icon="@drawable/add_simple"-->
+            <!--android:title="Import" />-->
+    <!--</group>-->
+
+    <!--<item-->
+        <!--android:id="@+id/rackManage"-->
+        <!--android:icon="@drawable/grid"-->
+        <!--android:title="@string/rackManage" />-->
+    <!--<item-->
+        <!--android:id="@+id/admin_action"-->
+        <!--android:icon="@drawable/change"-->
+        <!--android:title=""-->
+         <!--&gt;-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/deleteTags"-->
+                <!--android:icon="@drawable/close"-->
+                <!--android:title="@string/deleteTags" />-->
+            <!--<item-->
+                <!--android:id="@+id/editGoods"-->
+                <!--android:icon="@drawable/pencil"-->
+                <!--android:title="@string/CommodityModification" />-->
+            <!--<item-->
+                <!--android:id="@+id/editGoods2"-->
+                <!--android:icon="@android:drawable/ic_menu_edit"-->
+                <!--android:title="@string/CommodityModification" />-->
+        <!--</menu>-->
+    <!--</item>-->
+    <!--<item android:id="@+id/betaMenu"-->
+        <!--android:title=""-->
+        <!--&gt;-->
+        <!--<menu >-->
+            <!--<item android:id="@+id/testH5"-->
+                <!--android:icon="@drawable/star_yellow"-->
+                <!--android:title="测试H5"-->
+                <!--/>-->
+        <!--</menu>-->
+    <!--</item>-->
+    <item
+        android:id="@+id/upTagOffline"
+        android:icon="@drawable/pullup"
+        android:title="@string/upTagOffline" />
+    <item
+        android:id="@+id/updateAPP"
+        android:icon="@drawable/sync"
+        android:title="@string/update" />
+    <item
+        android:id="@+id/exit"
+        android:icon="@drawable/logout_block"
+        android:title="@string/exit" />
+</menu>

@@ -1,0 +1,59 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/good_info_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/good_info_manage_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <!--</LinearLayout>-->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="2dp"
+        android:src="@mipmap/scan"
+
+        android:visibility="visible"
+        app:layout_anchor="@id/good_info_manage_recyclerView"
+        app:layout_anchorGravity="bottom|center_horizontal" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="2dp"
+        android:src="@android:drawable/ic_menu_search"
+
+        android:visibility="gone"
+        app:layout_anchor="@id/good_info_manage_recyclerView"
+        app:layout_anchorGravity="bottom|center_horizontal" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/float_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="2dp"
+        android:src="@drawable/selected"
+
+        android:visibility="gone" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/float_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="2dp"
+        android:src="@drawable/forbid"
+
+        android:visibility="gone"
+        app:backgroundTint="?android:attr/textColorHighlightInverse" />
+</android.support.design.widget.CoordinatorLayout>

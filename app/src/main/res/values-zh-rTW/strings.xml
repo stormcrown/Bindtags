@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">價簽</string>
+    <string name="system_name">歡迎使用保資超市管理系統</string>
+    <string name="start_button">開始綁定</string>
+    <string name="login_title">超市管理系統</string>
+    <string name="login_username">賬號</string>
+    <string name="login_msg_enter_mobile">請輸入登陸賬號</string>
+    <string name="login_userpass">密碼</string>
+    <string name="login_msg_enter_userpass">請輸入密碼</string>
+    <string name="login_btn_show_pass">顯示密碼</string>
+    <string name="login_btn_login_in">登陸</string>
+    <string name="auto">自動</string>
+    <string name="current_store">當前門店</string>
+    <string name="current_store_error">獲取當前門店失敗</string>
+    <string name="login_msg_enter_username_str">請輸入用戶名！</string>
+    <string name="login_msg_enter_userpass_str">請輸入密碼！</string>
+    <string name="url_msg">請輸入服務器地址</string>
+    <string name="success">保存成功</string>
+    <string name="quit">再按一次後退鍵退出應用程序</string>
+    <string name="web_service_url">服務器地址:</string>
+    <string name="configure_button">設置</string>
+    <string name="goods_info_update">商品信息修改</string>
+    <string name="goods_name" >商品名稱：</string>
+    <string name="goods_price" >商品價格</string>
+    <string name="goods_code" >商品編碼</string>
+    <string name="good_code" >商品編碼</string>
+    <string name="good_name" >商品名稱</string>
+    <string name="tag_code">價簽編號</string>
+    <string name="scan_thing">掃描</string>
+    <string name="cocl" >可口可樂</string>
+    <string name="please_enter">請輸入</string>
+    <string name="save" >保存</string>
+    <string name="cancel" >取消</string>
+    <string name="other" >其他</string>
+    <string name="login_user">登錄人：</string>
+    <string name="log_out_str">退出</string>
+    <string name="title">選擇掃描的類型</string>
+    <string name="goods">商品</string>
+    <string name="tags">價簽</string>
+    <string name="bind_thing">綁定</string>
+    <string name="delete">刪除</string>
+    <string name="updateTags">上傳</string>
+    <string name="list">列表</string>
+    <string name="user">我的</string>
+    <string name="reset">重置</string>
+    <string name="goods_str">請掃描獲得商品信息</string>
+    <string name="tag_str">請掃描獲得價簽信息</string>
+    <string name="back">返回</string>
+    <!--<string name="web_service_url_address">/MarketOffLine/marketController/appService.do</string>-->
+    <!--<string name="web_service_url_address">/Market/marketController/appService.do</string>-->
+    <string name="web_service_url_address">/MarketWebService/marketController/appService.do</string>
+    <string name="failure_login">請查看服務器地址是否正確</string>
+    <string name="goods_search">請輸入商品名稱...</string>
+    <string name="is_not_bind">未綁定</string>
+    <string name="refresh_ing">正在刷新中</string>
+    <string name="is_bottom">已經到底啦</string>
+    <string name="is_loading">正在加載中</string>
+    <string name="is_bind_goods">該商品已綁定了價簽</string>
+    <string name="scan">WIFI開/關</string>
+    <string name="onoff">掃描WIFI</string>
+    <string name="socket_ip">192.168.1.1</string>
+    <string name="socket_port">8899</string>
+    <string name="frameHeader">255,255,255,</string>
+    <string name="frameTail">,252,252,252</string>
+    <string name="defaultDomineName" >http://47.100.50.216:35005</string>
+    <string name="KT0_SCAN" >com.se4500.onDecodeComplete</string>
+    <string name="InputCommodityCodeOrScan">輸入商品編碼或者掃描</string>
+    <string name="GettingGoodsInformation">正在獲取商品信息</string>
+    <string name="GoodsBarCodeCannotBeEmpty" >商品條碼不能爲空</string>
+    <string name="PleaseEnterGoodsBarcode">請輸入商品條碼</string>
+    <!-- 上傳中. . . -->
+    <string name="uploading">上傳中. . </string>
+    <!--解析失敗-->
+    <string name="ParsingFailure">解析失敗</string>
+    <!-- 是否重置 -->
+    <string name="ifReset" >是否重置？</string>
+    <!-- 條形碼 -->
+    <string name="barcode" >條形碼</string>
+    <!-- 品牌 -->
+    <string name="brand" >品牌</string>
+    <!-- 商品價格 -->
+    <string name="CommodityPrice" >商品價格</string>
+    <!-- 會員價 -->
+    <string name="MembershipPrice" >會員價</string>
+    <!-- 促銷價 -->
+    <string name="PromotionPrice" >促銷價</string>
+    <!-- 折扣價 -->
+    <string name="DiscountPrice" >折扣價</string>
+    <!-- 庫存 -->
+    <string name="Stock" >庫存</string>
+    <!-- 二維碼 -->
+    <string name="QRcode" >二維碼</string>
+    <!-- 活動開始時間 -->
+    <string name="ActivityStartTime" >活動開始時間</string>
+    <!-- 活動結束時間 -->
+    <string name="ActivityEndTime" >活動結束時間</string>
+    <!-- 品級 -->
+    <string name="Grade" >品級</string>
+    <!-- 活動開始時間錯誤 -->
+    <string name="ActivityStartTimeError"  >活動開始時間錯誤</string>
+    <!-- 活動結束時間錯誤 -->
+    <string name="ActivityEndTimeError" >活動結束時間錯誤</string>
+    <!-- 沒有需要提交的數據 -->
+    <string name="NoDataThatNeedsToBeSubmitted">沒有需要提交的數據</string>
+    <!-- 錯誤 -->
+    <string name="error">錯誤</string>
+    <!-- 失敗 -->
+    <string name="failed">失敗</string>
+    <!-- 加載中 . . .-->
+    <string name="loading">加載中 . . </string>
+    <!-- 不是價簽碼 -->
+    <string name="NotTagcode">不是價簽碼</string>
+    <!-- 需要管理員權限-->
+    <string name="NeedAdmin">需要管理員權限</string>
+    <!-- 退出-->
+    <string name="exit">退出</string>
+    <!-- 再按一次退出-->
+    <string name="PressAgainToExit">再按一次退出</string>
+    <!-- 退出 -->
+    <string name="ifExit">退出？</string>
+    <!-- 確認 -->
+    <string name="confirm">確認</string>
+    <!-- 提交 -->
+    <string name="Submission">提交</string>
+    <!-- 上傳 -->
+    <string name="upload">上傳</string>
+    <!-- 刪除價簽 -->
+    <string name="currentStoreDeleteTags"> %1$s -- 刪除價簽 </string>
+    <!-- 刪除價簽 -->
+    <string name="deleteTags">刪除價簽</string>
+    <!-- 個 -->
+    <!-- 已經掃描過該價簽！ -->
+    <string name="TagCodeHasBeenScanned">價簽 %1$s 已經掃描過！</string>
+    <!-- 請掃描價簽！ -->
+    <string name="PleaseScanThePricetag">請掃描價簽！</string>
+    <!-- 確認刪除 -->
+    <string name="confirmToDelete">確認刪除</string>
+    <!-- 將會上傳待刪除的價簽到服務器，然後由管理員手動刪除價簽信息。 -->
+    <string name="ThePriceTagToBeDeletedWillBeUploadedToTheServerAndThenTheAdministratorWillManuallyDeleteThePriceTagInformation">
+        將會上傳待刪除的價簽到服務器，然後由管理員手動刪除價簽信息。
+    </string>
+    <!-- 刪除價簽功能：將失效的價簽掃描後提交爲待刪除價簽，由管理員操作將價簽刪除。 -->
+    <string name="DeleteThePriceTagFunctionScanTheInvalidPriceTagAndSubmitItToThePriceTagToBeDeletedAndThePriceTagWillBeDeletedByTheAdministrator">
+        刪除價簽功能：將失效的價簽掃描後提交爲待刪除價簽，由管理員操作將價簽刪除。
+    </string>
+    <!-- 等待  價簽-->
+    <string name="TagsWaitTo">等待%1$s價簽</string>
+    <!-- 正在提交信息 -->
+    <string name="InformationIsBeingSubmitted">正在提交%1$s信息</string>
+    <!-- 待刪除價簽 -->
+    <string name="TagsTobeDelete">待刪除價簽</string>
+    <!-- 價簽 -->
+    <string name="Tags">價簽</string>
+    <!-- 正在提交待刪除價簽信息 -->
+    <string name="InformationIsBeingSubmittedToDeletePriceTagInformation">正在提交待刪除價簽信息</string>
+    <!-- 登陸人 -->
+    <string name="LoginUser">登陸人</string>
+    <!-- 賬號 -->
+    <string name="Account">賬號</string>
+    <!-- 主門店 -->
+    <string name="MainStore">主門店</string>
+    <!-- 當前門店 -->
+    <string name="CurrentStore">當前門店</string>
+    <!-- 個人信息 -->
+    <string name="PersonalInformation">個人信息</string>
+    <!-- 管理員操作 -->
+    <string name="AdminAction">管理員操作</string>
+    <!-- 商品修改 -->
+    <string name="CommodityModification">商品修改</string>
+    <!-- 商品圖片 -->
+    <string name="GoodsImageColon">商品圖片：</string>
+    <!-- 圖片大于 $d 或者不存在 -->
+    <string name="GoodsImageisLargeThanORDonotExist">圖片大于 %1$s 或者不存在</string>
+    <!-- 顯示商品 -->
+    <string name="ShowImages">顯示圖片</string>
+    <!-- 當前商品沒有圖片 -->
+    <string name="NoPicOfThisGoods">當前商品沒有圖片</string>
+    <!-- 變更當前門店 -->
+    <string name="changeCurrentStore">變更當前門店</string>
+    <!-- 當前門店Formate -->
+    <string name="currentStoreFormate">當前門店：%1$s</string>
+    <!-- 主門店Formate -->
+    <string name="mainStoreFormate">主門店：%1$s</string>
+    <!-- 貨架管理 -->
+    <string name="rackManage" >貨架管理</string>
+    <!-- 離線上傳 -->
+    <string name="upTagOffline" >離線上傳</string>
+    <!--請填寫IP地址 -->
+    <string name="PleaseFillInTheIPAddress" >請填寫IP地址</string>
+    <!-- 請填寫端口號 -->
+    <string name="PleaseFillinThePortNumber" >請填寫端口號</string>
+    <!-- 請輸入條形碼 -->
+    <string name="PleaseEnterABarCode" >請輸入條形碼</string>
+    <!-- 端口號： -->
+    <string name="PortNumberColon" >端口號：</string>
+    <!-- IP地址：-->
+    <string name="IPAddressColon" >IP地址：</string>
+    <!-- 基站直連 -->
+    <string name="DirectConnectionOfBaseStation" >基站直連</string>
+    <!-- 消息 -->
+    <string name="message">消息</string>
+    <!--沒有數據了-->
+    <string name="noMoreData">沒有數據了</string>
+    <!-- 更新 -->
+    <string name="update">更新</string>
+    <!-- APP爲最新 -->
+    <string name="APPIsTheLasted">APP爲最新</string>
+    <!-- 請輸入服務器地址 -->
+    <string name="PleaseFillTheServerAddress">請輸入服務器地址</string>
+    <!-- 桌面服務器地址 -->
+    <string name="DesktopServiceAddress" >桌面服務器地址</string>
+    <!-- 服務器IP -->
+    <string name="ServerIP">服務器IP</string>
+    <!-- 服務器端口 -->
+    <string name="ServerPort">服務器端口</string>
+    <!-- 請輸入服務器IP -->
+    <string name="PleaseFillTheServerIP" >請輸入服務器IP</string>
+    <!-- 請輸入服務器端口 -->
+    <string name="PleaseFillTheServerPort" >請輸入服務器端口</string>
+    <!-- 在線版 -->
+    <string name="Online">在線版</string>
+    <!-- 桌面版 -->
+    <string name="Desktop">桌面版</string>
+    <!-- 刪除賬號 -->
+    <string name="deleteAccount">刪除賬號： %1$s </string>
+    <!-- 端口不正確 -->
+    <string name="PortIsNotRight" >端口不正確</string>
+    <!-- IP及端口不正確 -->
+    <string name="IPORPORTIsNotRight">IP及端口不正確</string>
+    <!-- 連接中斷，請等待重新連接或者直接重新登錄 -->
+    <string name="ConnectionIsInterruptedPleaseWaitForReconnectionOrLoginDirectly">連接中斷，請等待重新連接或者直接重新登錄</string>
+    <!-- 超時 -->
+    <string name="overtime">超時</string>
+    <!-- 新增貨架 -->
+    <string  name="AddRack">新增貨架</string>
+    <!-- 輸入/禁止輸入 -->
+    <string name="EditableOrNot">輸入/禁止輸入</string>
+    <!-- 默認 -->
+    <string name="Default" >默認</string>
+    <!-- 價簽不正確 -->
+    <string name="TagCodeIsNotRight" >價簽不正確</string>
+    <string name="enter">進入</string>
+    <string name="auto_login">自動登錄</string>
+    <string name="DesktopService">桌面服務器</string>
+    <string name="loging">登陸中</string>
+    <string name="Pleasesetallowedinputintheupperrightcorner">請在右上角設置允許輸入</string>
+    <string name="ListWaitofuploads">等待上傳列表</string>
+    <string name="rack_name">貨架名稱</string>
+    <string name="rack_code">貨架編號</string>
+    <string name="max_lay">最大層數</string>
+    <string name="place_length">陳列格</string>
+    <string name="height">高度</string>
+    <string name="length">長度</string>
+    <string name="remarks">備注</string>
+    <string name="rackDetail">貨架詳情</string>
+    <string name="ANameConvenientToremember">一個方便記憶的名字</string>
+    <string name="ACodeConvenientToremember">一個方便記憶的編號</string>
+    <string name="MaxLayNotAllowNull">最大層不能爲空</string>
+    <string name="DisplayLengthNotAllowNull">陳列格爲貨架每層水平方向能放置的最大商品組</string>
+    <string name="deleteRackTips">您確認刪除這個貨架的信息嗎，刪除後只在網頁版後台才能恢複？</string>
+    <string name="Thecurrentshelfisnotyetsaved">當前貨架尚未保存！</string>
+    <string name="TheMaxLayersAndTheLongestShowcaseCannotbeempty">最高層數與最長陳列格不能爲空</string>
+    <string name="NetError">網絡錯誤</string>
+    <string name="PleaseOpenTheCameraPermissionsManually">請手動打開相機權限</string>
+    <string name="NextForceDistinguishTagcode">下次掃描強制識別爲價簽</string>
+    <string name="AllForceDistinguishTagcode">全部強制識別爲價簽</string>
+    <string name="PushAgain">重推</string>
+    <string name="totalOnes">共\t %1$d</string>
+</resources>

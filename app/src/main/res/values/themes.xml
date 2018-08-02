@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" >
+    <style name="littleword">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize" >16dp</item>
+        <item name="android:gravity" >center_horizontal</item>
+    </style>
+    <style name="littleword.left">
+        <item name="android:textColor">@color/light_orange_yellow</item>
+        <item name="android:textSize" >16dp</item>
+        <item name="android:gravity" >center_horizontal</item>
+    </style>
+    <!--<style name="blozi.toolbar" parent="Widget.AppCompat.Toolbar" >-->
+        <!--<item name="navigationIcon" >@mipmap/left</item>-->
+    <!--</style>-->
+    <style name="blozi.toolbar" parent="Base.V7.Widget.AppCompat.Toolbar" >
+        <item name="navigationIcon" >@mipmap/left</item>
+    </style>
+    <style name="blozi.collapseToolbar.collapsedTitleTextAppearance" parent="Widget.Design.CollapsingToolbar">
+        <item name="android:textColor" >@color/light_orange_yellow</item>
+        <item name="collapsedTitleGravity" >left</item>
+    </style>
+    <style name="blozi.collapseToolbar.expandedTitleTextAppearance" parent="Widget.Design.CollapsingToolbar">
+        <item name="android:textColor" >@color/light_orange_yellow</item>
+        <item name="expandedTitleGravity" >bottom|center_horizontal</item>
+    </style>
+
+    <style name="blozi.floatingActionButton"  parent="Widget.Design.FloatingActionButton"   >
+        <!--<item name="backgroundTint">@color/colorPrimary</item>-->
+        <item name="backgroundTint">@color/colorPrimary</item>
+        <item name="fabSize">auto</item>
+        <item name="elevation">@dimen/design_fab_elevation</item>
+        <item name="pressedTranslationZ">@dimen/design_fab_translation_z_pressed</item>
+        <item name="borderWidth">@dimen/design_fab_border_width</item>
+        <item name="android:layout_margin" >0dp</item>
+    </style>
+    <!-- toolbar菜单样式 -->
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <!-- 修改字体大小 -->
+        <!--<item name="android:textSize">15sp</item>-->
+        <!-- 修改字体颜色 -->
+        <item name="android:textColor">@color/light_orange_yellow</item>
+        <item name="colorControlNormal">@color/light_orange_yellow</item>
+        <item name="android:background">@null</item>
+    </style>
+    <style name="OverflowMenuStyle" parent="@style/Widget.AppCompat.PopupMenu.Overflow">
+        <!-- 是否覆盖锚点，默认为true，即盖住Toolbar -->
+        <item name="overlapAnchor">false</item>
+        <item name="android:dropDownWidth">wrap_content</item>
+        <item name="android:paddingRight">0dp</item>
+        <!-- 弹出层背景颜色 -->
+        <!-- 弹出层垂直方向上的偏移，即在竖直方向上距离Toolbar的距离，值为负则会盖住Toolbar -->
+        <item name="android:dropDownVerticalOffset">3.5dp</item>
+        <!-- 弹出层水平方向上的偏移，即距离屏幕左边的距离，负值会导致右边出现空隙 -->
+        <item name="android:dropDownHorizontalOffset">-5dp</item>
+        <!-- 设置弹出菜单文字颜色 -->
+        <!-- 添加这一句， 即可改变toolbar menu 图标的颜色-->
+        <!--toolbar标题文字颜色-->
+        <item name="android:textColorPrimary">@color/darkcyan</item>
+        <!--<item name="android:textColor">@color/colorPrimary</item>-->
+        <item name="android:textColor">@color/light_orange_yellow</item>
+        <item name="android:gradientRadius">15dp</item>
+        <item name="android:radius">50dp</item>
+
+    </style>
+    <style name="blozi.toolbar.overlay" parent="@style/Base.Widget.AppCompat.Light.PopupMenu.Overflow">
+        <!-- 是否覆盖锚点，默认为true，即盖住Toolbar -->
+        <!--<item name="android:overlapAnchor">false</item>  需要API 21 -->
+        <item name="android:layout_width" >wrap_content</item>
+        <item name="android:dropDownWidth">wrap_content</item>
+        <!--<item name="android:paddingRight">0dp</item>-->
+        <!--<item name="actionDropDownStyle">@style/blozi.toolbar.overlay.dropdown</item>-->
+        <!-- 添加这一句， 即可改变toolbar menu 图标的颜色-->
+        <!--<item name="android:textColorSecondary">#14b8f4</item>-->
+        <!--toolbar标题文字颜色-->
+        <!--<item name="android:textColorPrimary">@android:color/white</item>-->
+        <!-- 弹出层背景颜色 -->
+        <!--<item name="android:popupBackground">@color/light_dark</item>-->
+        <!--<item name="android:colorBackground">@color/light_dark</item>-->
+        <!-- 弹出层垂直方向上的偏移，即在竖直方向上距离Toolbar的距离，值为负则会盖住Toolbar -->
+        <!--<item name="android:dropDownVerticalOffset">?attr/actionBarSize</item>-->
+        <!-- 弹出层水平方向上的偏移，即距离屏幕左边的距离，负值会导致右边出现空隙 -->
+        <!--<item name="android:dropDownHorizontalOffset">0dp</item>-->
+        <!-- 设置弹出菜单文字颜色 -->
+        <item name="android:textColor">@color/light_orange_yellow</item>
+        <item name="android:textSize" >16dp</item>
+        <item name="android:gravity" >center_horizontal</item>
+        <!--<item name="android:gradientRadius">15dp</item>-->
+        <!--<item name="android:radius">50dp</item>-->
+    </style>
+    <!--<style name="blozi.toolbar.overlay.dropdown" parent="blozi.toolbar.overlay" >-->
+        <!--<item name="android:background" >@color/light_dark</item>-->
+        <!--<item name="android:colorBackground">@color/light_dark</item>-->
+        <!--<item name="android:popupBackground">@color/light_dark</item>-->
+    <!--</style>-->
+</resources>

@@ -1,0 +1,277 @@
+<resources>
+    <string name="Config_local_login" translatable="false">FAFAFA_71_y_%1$s_%2$s_%3$s_FCFCFC</string>
+    <string name="app_name">Tags</string>
+    <string name="system_name">Welcome to Blozi Market Manage System !</string>
+    <string name="start_button">Binding</string>
+    <string name="login_title">MarketManageSystem</string>
+    <string name="login_username">Login Id</string>
+    <string name="login_msg_enter_mobile">please enter LoginId</string>
+    <string name="login_userpass">password</string>
+    <string name="login_msg_enter_userpass">Please enter password</string>
+    <string name="login_btn_show_pass">Show Password</string>
+    <string name="login_btn_login_in">Login</string>
+    <string name="auto">Auto</string>
+    <string name="current_store">Current Store</string>
+    <string name="current_store_error">Get current store failed</string>
+    <string name="login_msg_enter_username_str">please enter loginID!</string>
+    <string name="login_msg_enter_userpass_str">please enter password!</string>
+    <string name="url_msg">Please enter the server address</string>
+    <string name="success">Success</string>
+    <string name="quit">Press Back Button Again will Exit</string>
+    <string name="web_service_url">Server address:</string>
+    <string name="configure_button">Config</string>
+    <string name="goods_info_update">Modification of commodity information</string>
+    <string name="goods_name">Goods name</string>
+    <string name="goods_price">Goods Price</string>
+    <string name="goods_code">Goods code</string>
+    <string name="good_code">Goods code</string>
+    <string name="good_name">Goods name</string>
+    <string name="tag_code">Tag code</string>
+    <string name="scan_thing">Scan </string>
+    <string name="cocl">cocl</string>
+    <string name="please_enter">please enter</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="other">Other</string>
+    <string name="login_user">login user:</string>
+    <string name="log_out_str">exit</string>
+    <string name="title">choose scan type</string>
+    <string name="goods">Goods</string>
+    <string name="tags">Tags</string>
+    <string name="bind_thing">bind</string>
+    <string name="delete">delete</string>
+    <string name="updateTags">upload</string>
+    <string name="list">List</string>
+    <string name="user">Me</string>
+    <string name="reset">Reset</string>
+    <string name="goods_str">Please scan the product information</string>
+    <string name="tag_str">Please scan the price tag information</string>
+    <string name="back">back</string>
+    <!--<string name="web_service_url_address">/MarketOffLine/marketController/appService.do</string>-->
+    <!--<string name="web_service_url_address">/Market/marketController/appService.do</string>-->
+    <string name="web_service_url_address">/MarketWebService/marketController/appService.do</string>
+    <string name="failure_login">Please see if the server\'s address is correct</string>
+    <string name="goods_search">Please enter the name of the goods...</string>
+    <string name="is_not_bind">unbind</string>
+    <string name="refresh_ing">refreshing</string>
+    <string name="is_bottom">It is bottom</string>
+    <string name="is_loading">Loading</string>
+    <string name="is_bind_goods">The commodity has been bound to the price tag</string>
+    <string name="scan">WIFI On/Off</string>
+    <string name="onoff">Scan WIFI</string>
+    <string name="socket_ip">192.168.1.1</string>
+    <string name="socket_port">8899</string>
+    <string name="frameHeader">255,255,255,</string>
+    <string name="frameTail">,252,252,252</string>
+    <string name="defaultDomineName">http://47.100.50.216:35005</string>
+    <string name="KT0_SCAN">com.se4500.onDecodeComplete</string>
+    <string name="InputCommodityCodeOrScan">Input commodity code or scan</string>
+    <string name="GettingGoodsInformation">Getting goods information</string>
+    <string name="GoodsBarCodeCannotBeEmpty">Goods bar code can not be empty</string>
+    <string name="PleaseEnterGoodsBarcode">Please enter goods bar code</string>
+    <!-- 上传中. . . -->
+    <string name="uploading">uploading</string>
+    <!--解析失败 -->
+    <string name="ParsingFailure">Parsing failure</string>
+    <!-- 是否重置 -->
+    <string name="ifReset">if reset?</string>
+    <!-- 条形码 -->
+    <string name="barcode">Barcode</string>
+    <!-- 品牌 -->
+    <string name="brand">brand</string>
+    <!-- 商品价格 -->
+    <string name="CommodityPrice">Commodity price</string>
+    <!-- 会员价 -->
+    <string name="MembershipPrice">Member price</string>
+    <!-- 促销价 -->
+    <string name="PromotionPrice">Promotion price</string>
+    <!-- 折扣价 -->
+    <string name="DiscountPrice">Discount price</string>
+    <!-- 库存 -->
+    <string name="Stock">Stock</string>
+    <!-- 二维码 -->
+    <string name="QRcode">QR code</string>
+    <!-- 活动开始时间 -->
+    <string name="ActivityStartTime">Activity start time</string>
+    <!-- 活动结束时间 -->
+    <string name="ActivityEndTime">Activity end time</string>
+    <!-- 品级 -->
+    <string name="Grade">Grade</string>
+    <!-- 活动开始时间错误 -->
+    <string name="ActivityStartTimeError">Activity start time error</string>
+    <!-- 活动结束时间错误 -->
+    <string name="ActivityEndTimeError">Activity start time error</string>
+    <!-- 没有需要提交的数据 -->
+    <string name="NoDataThatNeedsToBeSubmitted">No data that needs to be submitted</string>
+    <!-- 错误 -->
+    <string name="error">error</string>
+    <!-- 失败 -->
+    <string name="failed">failed</string>
+    <!-- 加载中 . . .-->
+    <string name="loading">loading</string>
+    <!-- 不是价签码 -->
+    <string name="NotTagcode">Not Tagcode</string>
+    <!-- 需要管理员权限-->
+    <string name="NeedAdmin">Admin only</string>
+    <!-- 退出-->
+    <string name="exit">Exit</string>
+    <!-- 再按一次退出-->
+    <string name="PressAgainToExit">Press again to exit</string>
+    <!-- 退出 -->
+    <string name="ifExit">Exit?</string>
+    <!-- 确认 -->
+    <string name="confirm">Confirm</string>
+    <!-- 提交 -->
+    <string name="Submission">Submission</string>
+    <!-- 上传 -->
+    <string name="upload">upload</string>
+    <!-- 删除价签 -->
+    <string name="currentStoreDeleteTags"> %1$s -- delete tags </string>
+    <!-- 删除价签 -->
+    <string name="deleteTags"> Delete tags </string>
+    <!-- 个 -->
+    <string name="totalOnes">Total\t %1$d</string>
+    <!-- 已经扫描过该价签！ -->
+    <string name="TagCodeHasBeenScanned">TagCode %1$s has been scanned</string>
+    <!-- 请扫描价签！ -->
+    <string name="PleaseScanThePricetag">Please scan the price tag</string>
+    <!-- 确认删除 -->
+    <string name="confirmToDelete">Confirm to delete</string>
+    <!-- 将会上传待删除的价签到服务器，然后由管理员手动删除价签信息。 -->
+    <string name="ThePriceTagToBeDeletedWillBeUploadedToTheServerAndThenTheAdministratorWillManuallyDeleteThePriceTagInformation">The price tag to be deleted will be uploaded to the server, and then the administrator will manually delete the price tag information.</string>
+    <!-- 删除价签功能：将失效的价签扫描后提交为待删除价签，由管理员操作将价签删除。 -->
+    <string name="DeleteThePriceTagFunctionScanTheInvalidPriceTagAndSubmitItToThePriceTagToBeDeletedAndThePriceTagWillBeDeletedByTheAdministrator">
+        Delete the price tag function: scan the invalid price tag and submit it to the price tag to be deleted, and the price tag will be deleted by the administrator.
+    </string>
+    <!-- 等待  价签-->
+    <string name="TagsWaitTo">Tags wait to %1$s</string>
+    <!-- 正在提交信息 -->
+    <string name="InformationIsBeingSubmitted">Information about %1$s is being submitted</string>
+    <!-- 待删除价签 -->
+    <string name="TagsTobeDelete">Tags need to be Delete</string>
+    <!-- 价签 -->
+    <string name="Tags">Tags</string>
+    <!-- 正在提交待删除价签信息 -->
+    <string name="InformationIsBeingSubmittedToDeletePriceTagInformation">Information is being submitted to delete price tag information</string>
+    <!-- 登陆人 -->
+    <string name="LoginUser">Login user</string>
+    <!-- 账号 -->
+    <string name="Account">Account</string>
+    <!-- 主门店 -->
+    <string name="MainStore">Main store</string>
+    <!-- 当前门店 -->
+    <string name="CurrentStore">Current store</string>
+    <!-- 个人信息 -->
+    <string name="PersonalInformation">Personal information</string>
+    <!-- 管理员操作 -->
+    <string name="AdminAction">Admin action</string>
+    <!-- 商品修改 -->
+    <string name="CommodityModification">Commodity modification</string>
+    <!-- 商品图片 -->
+    <string name="GoodsImageColon">Commodity picture:</string>
+    <!-- 图片大于 $d 或者不存在 -->
+    <string name="GoodsImageisLargeThanORDonotExist">The picture is larger than %1$s or does not exist</string>
+    <!-- 显示商品 -->
+    <string name="ShowImages">display picture</string>
+    <!-- 当前商品没有图片 -->
+    <string name="NoPicOfThisGoods">There is no picture for the this commodity</string>
+    <!-- 变更当前门店 -->
+    <string name="changeCurrentStore">Change the current store</string>
+    <!-- 当前门店Formate -->
+    <string name="currentStoreFormate">Current store:%1$s</string>
+    <!-- 主门店Formate -->
+    <string name="mainStoreFormate">Main store:%1$s</string>
+    <!-- 货架管理 -->
+    <string name="rackManage">Shelf management</string>
+    <!-- 离线上传 -->
+    <string name="upTagOffline">Offline upload</string>
+    <!--请填写IP地址 -->
+    <string name="PleaseFillInTheIPAddress">Please fill in the IP address</string>
+    <!-- 请填写端口号 -->
+    <string name="PleaseFillinThePortNumber">Please fill in the port number</string>
+    <!-- 请输入条形码 -->
+    <string name="PleaseEnterABarCode">Please enter a bar code</string>
+    <!-- 端口号： -->
+    <string name="PortNumberColon">Port Number :</string>
+    <!-- IP地址：-->
+    <string name="IPAddressColon">IP address:</string>
+    <!--基站直连 -->
+    <string name="DirectConnectionOfBaseStation">Direct connection of base station</string>
+    <!-- 登录中... -->
+    <string name="loging">loging</string>
+    <!-- 消息 -->
+    <string name="message">message</string>
+    <!--没有数据了-->
+    <string name="noMoreData">there is no more data</string>
+    <!-- 更新 -->
+    <string name="update">update</string>
+    <!-- APP为最新 -->
+    <string name="APPIsTheLasted">The version of APP is the latest</string>
+    <!-- 请输入服务器地址 -->
+    <string name="PleaseFillTheServerAddress">Please enter the server address</string>
+    <!-- 桌面服务器地址 -->
+    <string name="DesktopServiceAddress">Desktop service address</string>
+    <!-- 服务器IP -->
+    <string name="ServerIP">Server IP</string>
+    <!-- 服务器端口 -->
+    <string name="ServerPort">Server port</string>
+    <!-- 请输入服务器IP -->
+    <string name="PleaseFillTheServerIP">Please enter the server IP</string>
+    <!-- 请输入服务器端口 -->
+    <string name="PleaseFillTheServerPort">Please enter the server port</string>
+    <!-- 在线版 -->
+    <string name="Online">Online</string>
+    <!-- 桌面版 -->
+    <string name="Desktop">Desktop</string>
+    <!-- 桌面版服务器 -->
+    <string name="DesktopService">Desktop service</string>
+    <!-- 删除账号 -->
+    <string name="deleteAccount">Delete the account : %1$s </string>
+    <!-- 端口不正确 -->
+    <string name="PortIsNotRight">Port is not right</string>
+    <!-- IP及端口不正确 -->
+    <string name="IPORPORTIsNotRight">IP or Port is not right</string>
+    <!-- 连接中断，请等待重新连接或者直接重新登录 -->
+    <string name="ConnectionIsInterruptedPleaseWaitForReconnectionOrLoginDirectly">Connection is interrupted. Please wait for reconnection or login directly.</string>
+    <!-- 超时 -->
+    <string name="overtime">overtime</string>
+    <!-- 新增货架 -->
+    <string name="AddRack">New shelves</string>
+    <!-- 输入/禁止输入 -->
+    <string name="EditableOrNot">Editable or not </string>
+    <!-- 默认 -->
+    <string name="Default">Default</string>
+    <!-- 价签不正确 -->
+    <string name="TagCodeIsNotRight">TagCode is not right </string>
+    <!-- 进入 -->
+    <string name="enter">Enter</string>
+    <string name="auto_login">Auto Login</string>
+    <!-- 请在右上角设置允许输入 -->
+    <string name="Pleasesetallowedinputintheupperrightcorner">Please set allowed input in the upper right corner</string>
+    <string name="ListWaitofuploads">List wait to uploads</string>
+    <!-- 货架名称-->
+    <string name="rack_name">Rack name</string>
+    <!-- 货架编码-->
+    <string name="rack_code">Rack code</string>
+    <!-- 最大层 -->
+    <string name="max_lay">Max lay</string>
+    <!-- 陈列格 -->
+    <string name="place_length">Display length</string>
+    <string name="height">Height</string>
+    <string name="length">Length</string>
+    <string name="remarks">Remarke</string>
+    <string name="rackDetail">Rack detail</string>
+    <string name="MaxLayNotAllowNull">Max Lay is not input</string>
+    <string name="ANameConvenientToremember">A name convenient to remember</string>
+    <string name="ACodeConvenientToremember">A code convenient to remember</string>
+    <string name="DisplayLengthNotAllowNull">Display length is not allow none</string>
+    <string name="deleteRackTips">Do you confirm the deletion of the information on this shelf? Delete it only in the background of the webpage.</string>
+    <string name="Thecurrentshelfisnotyetsaved">The current shelf is not yet saved!</string>
+    <string name="TheMaxLayersAndTheLongestShowcaseCannotbeempty">The maximum number of layers and the longest showcase can not be empty</string>
+    <string name="NetError">Net Error</string>
+    <string name="PleaseOpenTheCameraPermissionsManually">Please open the camera permissions manually</string>
+    <string name="NextForceDistinguishTagcode">Next scan force distinguish tagcode  </string>
+    <string name="AllForceDistinguishTagcode">ALL force distinguish tagcode</string>
+    <string name="PushAgain">Push again</string>
+
+</resources>

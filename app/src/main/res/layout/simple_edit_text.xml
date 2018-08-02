@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/simple_edit_text_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="left|center_vertical"
+    android:background="@color/light_dark"
+     >
+    <FrameLayout
+        android:id="@+id/left_icon_root"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/left_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="invisible"
+            android:src="@android:drawable/ic_menu_compass" />
+        <ImageView
+            android:id="@+id/red_point"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:visibility="invisible"
+            android:src="@drawable/red_point"
+            android:layout_gravity="right|top"
+            />
+    </FrameLayout>
+    <EditText
+        android:id="@+id/editText"
+        android:layout_toRightOf="@id/left_icon_root"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=""
+        android:background="@null"
+        android:textSize="24sp"
+        android:textColor="@color/orange"
+        />
+    <TextView
+        android:id="@+id/subText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText"
+        android:layout_below="@+id/editText"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="19dp"
+        android:text=""
+        android:textColor="@color/orangered"
+        android:textSize="13sp" />
+    <ImageView
+        android:id="@+id/right_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:visibility="invisible"
+        android:padding="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/no" />
+</RelativeLayout>

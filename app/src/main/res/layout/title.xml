@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_parent"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/app_color_blue_2"
+    >
+    <ImageView
+        android:id="@+id/title_left_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/back"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/title_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/current_store"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="20dp"
+        android:textColor="@color/light_orange_yellow"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        />
+    <!--<ImageView-->
+        <!--android:id="@+id/title_right_image"-->
+        <!--android:layout_width="40dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:src="@drawable/warning"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:visibility="gone"-->
+        <!--/>-->
+
+</RelativeLayout>

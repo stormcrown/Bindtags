@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/simple_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:layout_constraintBottom_toTopOf="@+id/page"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:fitsSystemWindows="true"
+            android:theme="@style/ToolbarTheme"
+            app:collapsedTitleTextAppearance="@style/blozi.collapseToolbar.collapsedTitleTextAppearance"
+            app:expandedTitleTextAppearance="@style/blozi.collapseToolbar.expandedTitleTextAppearance"
+            app:popupTheme="@style/ToolbarTheme"
+            app:title="@string/app_name" />
+    </android.support.design.widget.AppBarLayout>
+    <com.blozi.bindtags.view.SlideControllViewPager
+        android:id="@+id/page"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_layout"
+        />
+    <!--<android.support.v4.widget.NestedScrollView-->
+        <!--android:id="@+id/nestedScrollView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="@color/transparent"-->
+        <!--android:fitsSystemWindows="true">-->
+        <!--<include layout="@layout/rack_detail" />-->
+    <!--</android.support.v4.widget.NestedScrollView>-->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/float_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="32dp"
+        android:fitsSystemWindows="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/save_primary"
+        android:tint="@color/colorPrimary"
+        android:visibility="gone"
+        app:layout_anchor="@id/simple_page"
+        app:layout_anchorGravity="bottom|right|end"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:visibility="visible" />
+</android.support.constraint.ConstraintLayout>

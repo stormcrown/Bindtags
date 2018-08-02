@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_user_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.blozi.bindtags.activities.UserInfoActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#c4c4c4" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_marginLeft="44dp"
+                android:text="登陆人："
+                android:textSize="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/user_name"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:text="登陆账号："
+                android:textSize="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textSize="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/login_id"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:text="当前门店："
+                android:textSize="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textSize="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/current_store_name"
+
+                    />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:textSize="24dp"
+                android:textColor="#FFFFFF"
+                android:background="#CCE9F4"
+                android:id="@+id/log_out"
+                android:textStyle="bold"
+                android:text="退出"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="46dp"
+        android:layout_weight="1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout2">
+
+        <!--<TextView-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="36dp"-->
+            <!--android:id="@+id/homepage_btn" />-->
+        <!--<TextView-->
+            <!--android:id="@+id/blind_goods_list"-->
+            <!--android:textSize="24dp"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1.00"-->
+            <!--android:background="@drawable/list"/>-->
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="36dp"/>
+        <TextView
+            android:id="@+id/to_blind"
+            android:textSize="24dp"
+            android:gravity="center"
+            android:text="@string/bind_thing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="36dp"/>
+        <TextView
+            android:id="@+id/import_tag"
+            android:textSize="24dp"
+            android:gravity="center"
+            android:text="@string/upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="36dp"/>
+        <TextView
+            android:id="@+id/user_info"
+            android:textSize="24dp"
+            android:gravity="center"
+            android:text="@string/user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="36dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

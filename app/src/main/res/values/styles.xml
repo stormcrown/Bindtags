@@ -1,0 +1,76 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">-->
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- 加入toolbar溢出【弹出】菜单的风格 -->
+        <item name="actionOverflowMenuStyle">@style/OverflowMenuStyle</item>
+        <!-- 软键盘行为 -->
+        <item name="android:windowSoftInputMode">stateHidden|adjustPan</item>
+
+        <item name="coordinatorLayoutStyle">@style/Widget.Support.CoordinatorLayout</item>
+    </style>
+    <!--<style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">-->
+    <style name="AppTheme" parent="AppTheme.Base">
+
+
+
+    </style>
+    <style name="AppTheme.NoActionBar" parent="AppTheme"  >
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:activityOpenEnterAnimation">@anim/in_left</item>
+        <item name="android:activityOpenExitAnimation">@anim/out_right</item>
+        <item name="android:activityCloseEnterAnimation">@anim/in_right</item>
+        <item name="android:activityCloseExitAnimation">@anim/out_left</item>
+    </style>
+    <!-- 活动切换动画 -->
+    <style name="FeelyouWindowAnimTheme" parent="@android:style/Animation.Activity"  >
+        <item name="android:activityOpenEnterAnimation">@anim/in_left</item>
+        <item name="android:activityOpenExitAnimation">@anim/out_right</item>
+        <item name="android:activityCloseEnterAnimation">@anim/in_right</item>
+        <item name="android:activityCloseExitAnimation">@anim/out_left</item>
+    </style>
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+    <style name="CustomProgressDialog" parent="@style/CustomDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="ToolbarPopupTheme" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
+        <!--<item name="android:colorBackground">#90000000</item>  &lt;!&ndash; 设置背景颜色&ndash;&gt;-->
+        <!--<item name="android:background">@color/light_dark</item>-->
+        <item name="overlapAnchor">false</item>  <!--设置不覆盖锚点-->
+    </style>
+    <style name="button_wrapper_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">24dp</item>
+        <item name="android:paddingBottom">24dp</item>
+    </style>
+    <style name="editText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/colorPrimaryLight</item>
+        <item name="colorControlActivated">@color/colorPrimaryLight</item>
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item><!--半透明-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowBackground">@color/transparent</item><!--背景透明-->
+        <item name="android:backgroundDimEnabled">false</item><!--模糊-->
+    </style>
+</resources>

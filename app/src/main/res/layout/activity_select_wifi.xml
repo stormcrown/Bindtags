@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_select_wifi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.blozi.bindtags.activities.SelectWifiActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:layout_alignRight="@+id/linearLayout2"
+        android:layout_alignEnd="@+id/linearLayout2"
+        android:layout_above="@+id/linearLayout2"
+        android:id="@+id/swipe_layout"
+        android:layout_below="@+id/top">
+
+        <ListView
+            android:id="@+id/wifi_conn_lv"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            tools:ignore="NestedScrolling"
+            android:layout_height="fill_parent">
+        </ListView>
+
+    </LinearLayout>
+    <LinearLayout android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/wifi_conn_scan_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/scan"
+            android:textColor="@android:color/background_light"
+            android:background="@android:color/holo_blue_light" />
+
+        <Button
+            android:id="@+id/wifi_conn_switch_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/onoff"
+            android:textColor="@android:color/background_light"
+            android:background="@android:color/holo_blue_light" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="app_primary_color" format="color"/> <!-- topbar -->
+    <attr name="app_content_bg_color" format="color"/> <!-- content-->
+
+    <declare-styleable name="CommonItemLine">
+        <attr name="mainText" format="reference|string" />
+        <attr name="subText" format="reference|string" />
+        <attr name="showRightIcon" format="boolean" />
+        <attr name="showRedPoint" format="boolean" />
+    </declare-styleable>
+
+
+
+    <declare-styleable name="CommonEditTextLine">
+        <attr name="hint" format="reference|string" />
+        <attr name="subText1" format="reference|string" />
+        <attr name="editText" format="reference|string" />
+        <attr name="imeOptions" format="string" />
+    </declare-styleable>
+    <declare-styleable name="innerrect">
+        <attr name="inner_width" format="integer"/>
+        <attr name="inner_height" format="integer"/>
+        <attr name="inner_margintop" format="integer" />
+        <attr name="inner_corner_color" format="color" />
+        <attr name="inner_corner_length" format="integer" />
+        <attr name="inner_corner_width" format="integer" />
+        <attr name="inner_scan_bitmap" format="reference" />
+        <attr name="inner_scan_speed" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="MyItemLine">
+        <attr name="layout_width"  format="integer" />
+        <attr name="wrap_content" format="integer" />
+    </declare-styleable>
+</resources>

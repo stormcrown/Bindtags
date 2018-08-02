@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+         一次性动画，不要在XML中配置重复
+     -->
+    <translate xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="1000"
+        android:fromYDelta="-100%p"
+        android:fromXDelta="0"
+        android:toXDelta="0"
+        android:toYDelta="0" >
+
+    </translate>
+</set>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_send_date_to_ap"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.blozi.bindtags.activities.SendDateToApActivity">
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#ffffff"
+            android:gravity="center_vertical|center"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:text="@string/goods_code"
+                android:layout_gravity="center_vertical"/>
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/goods_code"
+                android:layout_weight="0.57" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#ffffff"
+            android:gravity="center_vertical|center"
+            android:layout_above="@+id/passlayout"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:text="@string/tag_code"
+                android:layout_gravity="center_vertical"/>
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tag_code"
+                android:layout_weight="0.57" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/middle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top">
+
+        <TextView
+            android:id="@+id/word"
+            android:text="上传列表"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/is_update"
+            android:textSize="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:id="@+id/swipe_layout"
+        android:layout_below="@+id/middle"
+        android:layout_above="@+id/bottom">
+
+        <ListView
+            android:id="@+id/update_date_list"
+            android:layout_width="match_parent"
+            tools:ignore="NestedScrolling"
+            android:layout_height="match_parent">
+        </ListView>
+
+        <TextView
+            android:id="@+id/empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="暂无上传数据" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:gravity="center_vertical|center"
+        android:weightSum="1">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/to_reset"
+            android:text="@string/reset"/>
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="fill_parent" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scan"
+            android:text="@string/scan_thing"/>
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="fill_parent" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/upload"
+            android:id="@+id/update_date"/>
+    </LinearLayout>
+</RelativeLayout>

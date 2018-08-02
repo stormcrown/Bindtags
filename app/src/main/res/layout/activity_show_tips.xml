@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_index"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:windowLightStatusBar="false"
+    android:statusBarColor="@color/transparent"
+    tools:context="com.blozi.bindtags.activities.ShowTipsActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/activity_index_view_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="24dp"
+        android:indeterminateDrawable="@drawable/progress_style"
+        android:text="@string/auto_login"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <!--<android.support.constraint.ConstraintLayout-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="match_parent"-->
+            <!--&gt;-->
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radio_button_style"
+                android:buttonTint="@color/radio"
+                android:layout_marginRight="@dimen/radioButtonWidth"
+                 />
+
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radio_button_style"
+                android:layout_marginRight="@dimen/radioButtonWidth"
+                android:buttonTint="@color/radio"
+                />
+
+            <RadioButton
+                android:id="@+id/radio3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radio_button_style"
+                android:layout_marginRight="@dimen/radioButtonWidth"
+                android:buttonTint="@color/radio"
+                 />
+
+            <RadioButton
+                android:id="@+id/radio4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radio_button_style"
+                android:layout_marginRight="@dimen/radioButtonWidth"
+                android:buttonTint="@color/radio"
+                />
+
+            <RadioButton
+                android:id="@+id/radio5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radio_button_style"
+                android:layout_marginRight="@dimen/radioButtonWidth"
+                android:buttonTint="@color/radio"
+                />
+
+            <RadioButton
+                android:id="@+id/radio6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radio_button_style"
+                android:buttonTint="@color/radio"
+                />
+        <!--</android.support.constraint.ConstraintLayout>-->
+
+    </RadioGroup>
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="24dp"
+        android:alpha="0.4"
+        android:background="@drawable/pull_right_primary"
+        android:backgroundTint="@color/colorPrimaryLight"
+        android:scaleType="centerInside"
+        android:text="@string/enter"
+
+        android:textColor="@color/light_orange_yellow"
+        android:textSize="@dimen/common_button_textSize"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/radios"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

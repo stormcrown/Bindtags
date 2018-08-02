@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true" android:color="@color/colorAccent"></item>
+    <item android:state_active="true"  android:color="@color/light_orange_yellow"></item>
+    <item android:color="@color/darkorange"></item>
+    <item android:color="@color/hotpink"></item>
+    <item android:color="@color/fuchsia"></item>
+</selector>

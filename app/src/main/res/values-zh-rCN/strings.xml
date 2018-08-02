@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">价签</string>
+    <string name="system_name">欢迎使用保资超市管理系统</string>
+    <string name="start_button">开始绑定</string>
+    <string name="login_title">超市管理系统</string>
+    <string name="login_username">账号</string>
+    <string name="login_msg_enter_mobile">请输入登陆账号</string>
+    <string name="login_userpass">密码</string>
+    <string name="login_msg_enter_userpass">请输入密码</string>
+    <string name="login_btn_show_pass">显示密码</string>
+    <string name="login_btn_login_in">登陆</string>
+    <string name="auto">自动</string>
+    <string name="current_store">当前门店</string>
+    <string name="current_store_error">获取当前门店失败</string>
+    <string name="login_msg_enter_username_str">请输入用户名！</string>
+    <string name="login_msg_enter_userpass_str">请输入密码！</string>
+    <string name="url_msg">请输入服务器地址</string>
+    <string name="success">保存成功</string>
+    <string name="quit">再按一次后退键退出应用程序</string>
+    <string name="web_service_url">服务器地址:</string>
+    <string name="configure_button">设置</string>
+    <string name="goods_info_update">商品信息修改</string>
+    <string name="goods_name" >商品名称：</string>
+    <string name="goods_price" >商品价格</string>
+    <string name="goods_code" >商品编码</string>
+    <string name="good_code" >商品编码</string>
+    <string name="good_name" >商品名称</string>
+    <string name="tag_code">价签编号</string>
+    <string name="scan_thing">扫描</string>
+    <string name="cocl" >可口可乐</string>
+    <string name="please_enter">请输入</string>
+    <string name="save" >保存</string>
+    <string name="cancel" >取消</string>
+    <string name="other" >其他</string>
+    <string name="login_user">登录人：</string>
+    <string name="log_out_str">退出</string>
+    <string name="title">选择扫描的类型</string>
+    <string name="goods">商品</string>
+    <string name="tags">价签</string>
+    <string name="bind_thing">绑定</string>
+    <string name="delete">删除</string>
+    <string name="updateTags">上传</string>
+    <string name="list">列表</string>
+    <string name="user">我的</string>
+    <string name="reset">重置</string>
+    <string name="goods_str">请扫描获得商品信息</string>
+    <string name="tag_str">请扫描获得价签信息</string>
+    <string name="back">返回</string>
+    <!--<string name="web_service_url_address">/MarketOffLine/marketController/appService.do</string>-->
+    <!--<string name="web_service_url_address">/Market/marketController/appService.do</string>-->
+    <string name="web_service_url_address">/MarketWebService/marketController/appService.do</string>
+    <string name="failure_login">请查看服务器地址是否正确</string>
+    <string name="goods_search">请输入商品名称...</string>
+    <string name="is_not_bind">未绑定</string>
+    <string name="refresh_ing">正在刷新中</string>
+    <string name="is_bottom">已经到底啦</string>
+    <string name="is_loading">正在加载中</string>
+    <string name="is_bind_goods">该商品已绑定了价签</string>
+    <string name="scan">WIFI开/关</string>
+    <string name="onoff">扫描WIFI</string>
+    <string name="socket_ip">192.168.1.1</string>
+    <string name="socket_port">8899</string>
+    <string name="frameHeader">255,255,255,</string>
+    <string name="frameTail">,252,252,252</string>
+    <string name="defaultDomineName" >http://47.100.50.216:35005</string>
+    <string name="KT0_SCAN" >com.se4500.onDecodeComplete</string>
+    <string name="InputCommodityCodeOrScan">输入商品编码或者扫描</string>
+    <string name="GettingGoodsInformation">正在获取商品信息</string>
+    <string name="GoodsBarCodeCannotBeEmpty" >商品条码不能为空</string>
+    <string name="PleaseEnterGoodsBarcode">请输入商品条码</string>
+    <!-- 上传中. . . -->
+    <string name="uploading">上传中. . </string>
+    <!--解析失败-->
+    <string name="ParsingFailure">解析失败</string>
+    <!-- 是否重置 -->
+    <string name="ifReset" >是否重置？</string>
+    <!-- 条形码 -->
+    <string name="barcode" >条形码</string>
+    <!-- 品牌 -->
+    <string name="brand" >品牌</string>
+    <!-- 商品价格 -->
+    <string name="CommodityPrice" >商品价格</string>
+    <!-- 会员价 -->
+    <string name="MembershipPrice" >会员价</string>
+    <!-- 促销价 -->
+    <string name="PromotionPrice" >促销价</string>
+    <!-- 折扣价 -->
+    <string name="DiscountPrice" >折扣价</string>
+    <!-- 库存 -->
+    <string name="Stock" >库存</string>
+    <!-- 二维码 -->
+    <string name="QRcode" >二维码</string>
+    <!-- 活动开始时间 -->
+    <string name="ActivityStartTime" >活动开始时间</string>
+    <!-- 活动结束时间 -->
+    <string name="ActivityEndTime" >活动结束时间</string>
+    <!-- 品级 -->
+    <string name="Grade" >品级</string>
+    <!-- 活动开始时间错误 -->
+    <string name="ActivityStartTimeError"  >活动开始时间错误</string>
+    <!-- 活动结束时间错误 -->
+    <string name="ActivityEndTimeError" >活动结束时间错误</string>
+    <!-- 没有需要提交的数据 -->
+    <string name="NoDataThatNeedsToBeSubmitted">没有需要提交的数据</string>
+    <!-- 错误 -->
+    <string name="error">错误</string>
+    <!-- 失败 -->
+    <string name="failed">失败</string>
+    <!-- 加载中 . . .-->
+    <string name="loading">加载中 . . </string>
+    <!-- 不是价签码 -->
+    <string name="NotTagcode">不是价签码</string>
+    <!-- 需要管理员权限-->
+    <string name="NeedAdmin">需要管理员权限</string>
+    <!-- 退出-->
+    <string name="exit">退出</string>
+    <!-- 再按一次退出-->
+    <string name="PressAgainToExit">再按一次退出</string>
+    <!-- 退出 -->
+    <string name="ifExit">退出？</string>
+    <!-- 确认 -->
+    <string name="confirm">确认</string>
+    <!-- 提交 -->
+    <string name="Submission">提交</string>
+    <!-- 上传 -->
+    <string name="upload">上传</string>
+    <!-- 删除价签 -->
+    <string name="currentStoreDeleteTags"> %1$s -- 删除价签 </string>
+    <!-- 删除价签 -->
+    <string name="deleteTags">删除价签</string>
+    <!-- 个 -->
+    <!-- 已经扫描过该价签！ -->
+    <string name="TagCodeHasBeenScanned">价签 %1$s 已经扫描过！</string>
+    <!-- 请扫描价签！ -->
+    <string name="PleaseScanThePricetag">请扫描价签！</string>
+    <!-- 确认删除 -->
+    <string name="confirmToDelete">确认删除</string>
+    <!-- 将会上传待删除的价签到服务器，然后由管理员手动删除价签信息。 -->
+    <string name="ThePriceTagToBeDeletedWillBeUploadedToTheServerAndThenTheAdministratorWillManuallyDeleteThePriceTagInformation">
+        将会上传待删除的价签到服务器，然后由管理员手动删除价签信息。
+    </string>
+    <!-- 删除价签功能：将失效的价签扫描后提交为待删除价签，由管理员操作将价签删除。 -->
+    <string name="DeleteThePriceTagFunctionScanTheInvalidPriceTagAndSubmitItToThePriceTagToBeDeletedAndThePriceTagWillBeDeletedByTheAdministrator">
+        删除价签功能：将失效的价签扫描后提交为待删除价签，由管理员操作将价签删除。
+    </string>
+    <!-- 等待  价签-->
+    <string name="TagsWaitTo">等待%1$s价签</string>
+    <!-- 正在提交信息 -->
+    <string name="InformationIsBeingSubmitted">正在提交%1$s信息</string>
+    <!-- 待删除价签 -->
+    <string name="TagsTobeDelete">待删除价签</string>
+    <!-- 价签 -->
+    <string name="Tags">价签</string>
+    <!-- 正在提交待删除价签信息 -->
+    <string name="InformationIsBeingSubmittedToDeletePriceTagInformation">正在提交待删除价签信息</string>
+    <!-- 登陆人 -->
+    <string name="LoginUser">登陆人</string>
+    <!-- 账号 -->
+    <string name="Account">账号</string>
+    <!-- 主门店 -->
+    <string name="MainStore">主门店</string>
+    <!-- 当前门店 -->
+    <string name="CurrentStore">当前门店</string>
+    <!-- 个人信息 -->
+    <string name="PersonalInformation">个人信息</string>
+    <!-- 管理员操作 -->
+    <string name="AdminAction">管理员操作</string>
+    <!-- 商品修改 -->
+    <string name="CommodityModification">商品修改</string>
+    <!-- 商品图片 -->
+    <string name="GoodsImageColon">商品图片：</string>
+    <!-- 图片大于 $d 或者不存在 -->
+    <string name="GoodsImageisLargeThanORDonotExist">图片大于 %1$s 或者不存在</string>
+    <!-- 显示商品 -->
+    <string name="ShowImages">显示图片</string>
+    <!-- 当前商品没有图片 -->
+    <string name="NoPicOfThisGoods">当前商品没有图片</string>
+    <!-- 变更当前门店 -->
+    <string name="changeCurrentStore">变更当前门店</string>
+    <!-- 当前门店Formate -->
+    <string name="currentStoreFormate">当前门店：%1$s</string>
+    <!-- 主门店Formate -->
+    <string name="mainStoreFormate">主门店：%1$s</string>
+    <!-- 货架管理 -->
+    <string name="rackManage" >货架管理</string>
+    <!-- 离线上传 -->
+    <string name="upTagOffline" >离线上传</string>
+    <!--请填写IP地址 -->
+    <string name="PleaseFillInTheIPAddress" >请填写IP地址</string>
+    <!-- 请填写端口号 -->
+    <string name="PleaseFillinThePortNumber" >请填写端口号</string>
+    <!-- 请输入条形码 -->
+    <string name="PleaseEnterABarCode" >请输入条形码</string>
+    <!-- 端口号： -->
+    <string name="PortNumberColon" >端口号：</string>
+    <!-- IP地址：-->
+    <string name="IPAddressColon" >IP地址：</string>
+    <!-- 基站直连 -->
+    <string name="DirectConnectionOfBaseStation" >基站直连</string>
+    <!-- 消息 -->
+    <string name="message">消息</string>
+    <!--没有数据了-->
+    <string name="noMoreData">没有数据了</string>
+    <!-- 更新 -->
+    <string name="update">更新</string>
+    <!-- APP为最新 -->
+    <string name="APPIsTheLasted">APP为最新</string>
+    <!-- 请输入服务器地址 -->
+    <string name="PleaseFillTheServerAddress">请输入服务器地址</string>
+    <!-- 桌面服务器地址 -->
+    <string name="DesktopServiceAddress" >桌面服务器地址</string>
+    <!-- 服务器IP -->
+    <string name="ServerIP">服务器IP</string>
+    <!-- 服务器端口 -->
+    <string name="ServerPort">服务器端口</string>
+    <!-- 请输入服务器IP -->
+    <string name="PleaseFillTheServerIP" >请输入服务器IP</string>
+    <!-- 请输入服务器端口 -->
+    <string name="PleaseFillTheServerPort" >请输入服务器端口</string>
+    <!-- 在线版 -->
+    <string name="Online">在线版</string>
+    <!-- 桌面版 -->
+    <string name="Desktop">桌面版</string>
+    <!-- 删除账号 -->
+    <string name="deleteAccount">删除账号： %1$s </string>
+    <!-- 端口不正确 -->
+    <string name="PortIsNotRight" >端口不正确</string>
+    <!-- IP及端口不正确 -->
+    <string name="IPORPORTIsNotRight">IP及端口不正确</string>
+    <!-- 连接中断，请等待重新连接或者直接重新登录 -->
+    <string name="ConnectionIsInterruptedPleaseWaitForReconnectionOrLoginDirectly">连接中断，请等待重新连接或者直接重新登录</string>
+    <!-- 超时 -->
+    <string name="overtime">超时</string>
+    <!-- 新增货架 -->
+    <string  name="AddRack">新增货架</string>
+    <!-- 输入/禁止输入 -->
+    <string name="EditableOrNot">输入/禁止输入</string>
+    <!-- 默认 -->
+    <string name="Default" >默认</string>
+    <!-- 价签不正确 -->
+    <string name="TagCodeIsNotRight" >价签不正确</string>
+
+    <string name="DesktopService">桌面服务器</string>
+    <string name="enter">进入</string>
+    <string name="auto_login">自动登录</string>
+    <string name="loging">登陆中</string>
+    <string name="Pleasesetallowedinputintheupperrightcorner">请在右上角设置允许输入</string>
+    <string name="ListWaitofuploads">等待上传列表</string>
+    <string name="rack_name">货架名称</string>
+    <string name="rack_code">货架编号</string>
+    <string name="max_lay">最大层数</string>
+    <string name="place_length">陈列格</string>
+    <string name="height">高度</string>
+    <string name="length">长度</string>
+    <string name="remarks">备注</string>
+    <string name="rackDetail">货架详情</string>
+    <string name="ANameConvenientToremember">一个方便记忆的名字</string>
+    <string name="ACodeConvenientToremember">一个方便记忆的编号</string>
+    <string name="MaxLayNotAllowNull">最大层不能为空</string>
+    <string name="DisplayLengthNotAllowNull">陈列格为货架每层水平方向能放置的最大商品组</string>
+    <string name="deleteRackTips">您确认删除这个货架的信息吗，删除后只在网页版后台才能恢复？</string>
+    <string name="Thecurrentshelfisnotyetsaved">当前货架尚未保存！</string>
+    <string name="TheMaxLayersAndTheLongestShowcaseCannotbeempty">最高层数与最长陈列格不能为空</string>
+    <string name="NetError">网络错误</string>
+    <string name="PleaseOpenTheCameraPermissionsManually">请手动打开相机权限</string>
+    <string name="NextForceDistinguishTagcode">下次扫描强制识别为价签</string>
+    <string name="AllForceDistinguishTagcode">全部强制识别为价签</string>
+    <string name="PushAgain">重推</string>
+    <string name="totalOnes">共\t %1$d</string>
+</resources>

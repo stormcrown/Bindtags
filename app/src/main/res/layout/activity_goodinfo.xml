@@ -1,0 +1,125 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:fitsSystemWindows="true"
+    android:theme="@style/AppTheme.NoActionBar"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+            <!--
+                app:expandedTitleMarginEnd="64dp"
+                app:expandedTitleMarginStart="48dp"
+            -->
+            <ImageView
+                android:id="@+id/top_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0.7"
+                />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                app:collapsedTitleTextAppearance="@style/blozi.collapseToolbar.collapsedTitleTextAppearance"
+                app:expandedTitleTextAppearance="@style/blozi.collapseToolbar.expandedTitleTextAppearance"
+                app:layout_collapseMode="pin"
+                app:navigationIcon="@drawable/left_arrow_orange"
+                app:collapseIcon="@drawable/more_vertical_orange"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                android:theme="@style/ToolbarTheme"
+                />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+        <!--
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        -->
+    </android.support.design.widget.AppBarLayout>
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical"-->
+    <!--&gt;-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <!--</LinearLayout>-->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="2dp"
+        android:src="@mipmap/scan"
+        android:theme="@style/blozi.floatingActionButton"
+        android:visibility="visible"
+        app:layout_anchor="@id/recycle_view"
+        app:layout_anchorGravity="bottom|center_horizontal" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="2dp"
+        android:src="@android:drawable/ic_menu_search"
+        android:theme="@style/blozi.floatingActionButton"
+        android:visibility="gone"
+        app:layout_anchor="@id/recycle_view"
+        app:layout_anchorGravity="bottom|center_horizontal" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/float_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="2dp"
+        android:src="@drawable/selected"
+        android:theme="@style/blozi.floatingActionButton"
+        android:visibility="gone" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/float_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:layout_margin="2dp"
+        android:src="@drawable/forbid"
+        android:theme="@style/blozi.floatingActionButton"
+        android:visibility="gone" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/float_onappbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@mipmap/change_simple"
+        android:visibility="gone"
+        app:layout_anchor="@id/app_bar"
+        app:layout_anchorGravity="bottom|right|end"
+        tools:visibility="gone" />
+</android.support.design.widget.CoordinatorLayout>

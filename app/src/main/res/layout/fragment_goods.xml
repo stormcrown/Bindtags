@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<ImageView-->
+        <!--android:id="@+id/loadingImageView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:contentDescription="@string/loading"-->
+        <!--android:tint="@color/colorPrimary"-->
+        <!--android:src="@drawable/loading" />-->
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/loading"
+        android:id = "@+id/swipe_refresh_layout"
+        >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/goods_property"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:scrollbarFadeDuration="1000"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+        </android.support.v7.widget.RecyclerView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="2dp"
+        android:src="@mipmap/scan"
+        android:theme="@style/blozi.floatingActionButton"
+        android:visibility="visible"
+        app:layout_anchor="@id/goods_property"
+        app:layout_anchorGravity="bottom|center_horizontal" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="2dp"
+        android:src="@android:drawable/ic_menu_search"
+        android:theme="@style/blozi.floatingActionButton"
+        android:visibility="gone"
+        app:layout_anchor="@id/goods_property"
+        app:layout_anchorGravity="bottom|center_horizontal" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/float_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="2dp"
+        android:src="@drawable/selected"
+        android:theme="@style/blozi.floatingActionButton"
+        android:visibility="gone" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/float_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:layout_margin="2dp"
+        android:src="@drawable/forbid"
+        android:theme="@style/blozi.floatingActionButton"
+        android:visibility="gone" />
+</android.support.design.widget.CoordinatorLayout>

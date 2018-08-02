@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+    <item android:title="@string/scan_thing"
+        android:id="@+id/scan_good_code"
+        android:icon="@drawable/scan_orange"
+        android:orderInCategory="1"
+        android:iconTint="@color/light_orange_yellow"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/ok"
+        android:icon="@drawable/check_orange"
+        android:iconTintMode="screen"
+        android:iconTint="@color/light_orange_yellow"
+        android:orderInCategory="2"
+        android:title="@string/save"
+
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/no"
+        android:checked="false"
+        android:icon="@drawable/close_orange"
+        android:iconTint="@color/light_orange_yellow"
+        android:orderInCategory="3"
+        android:title="@string/cancel"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/showImages"
+        android:checked="false"
+        android:icon="@drawable/download_orange"
+        android:iconTint="@color/light_orange_yellow"
+        android:orderInCategory="4"
+        android:title="@string/ShowImages"
+        app:showAsAction="ifRoom" />
+
+    <!--<item-->
+        <!--android:id="@+id/other"-->
+        <!--android:checked="false"-->
+        <!--android:icon="@android:drawable/ic_menu_compass"-->
+        <!--android:iconTint="@android:drawable/ic_menu_compass"-->
+        <!--android:orderInCategory="4"-->
+        <!--android:title="其他"-->
+        <!--app:showAsAction="never" />-->
+    <!--<item-->
+        <!--android:id="@+id/other1"-->
+        <!--android:checked="false"-->
+        <!--android:icon="@android:drawable/ic_menu_compass"-->
+        <!--android:iconTint="@android:drawable/ic_menu_compass"-->
+        <!--android:orderInCategory="5"-->
+        <!--android:title="其他"-->
+        <!--app:showAsAction="never" />-->
+    <!--<item-->
+        <!--android:id="@+id/other2"-->
+        <!--android:checked="false"-->
+        <!--android:icon="@android:drawable/ic_menu_compass"-->
+        <!--android:iconTint="@android:drawable/ic_menu_compass"-->
+        <!--android:orderInCategory="6"-->
+        <!--android:title="其他"-->
+        <!--app:showAsAction="never" />-->
+</menu>
